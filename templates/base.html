@@ -1,0 +1,30 @@
+Моя Информация
+<br>
+<br>
+<br>
+<br>
+{{info.name}}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Info</title>
+</head>
+<body>
+
+<h1>Моя информация</h1>
+
+{% if info %}
+    <p><strong>Имя:</strong> {{ info.name }}</p>
+    <p><strong>Профессия:</strong> {{ info.profession }}</p>
+    <p><strong>Возраст:</strong> {{ info.age }}</p>
+
+    <img src="{{ info.photo.url }}" width="200">
+{% else %}
+    <p>Данные не найдены</p>
+{% endif %}
+
+<a href="{% url 'homepage-page' %}">Далее</a>
+
+</body>
+</html>

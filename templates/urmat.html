@@ -1,0 +1,29 @@
+О нас
+<br>
+<br>
+<br>
+{{company.name}}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Urmat</title>
+</head>
+<body>
+
+<h1>{{ info.name }}</h1>
+
+<p><strong>Описание:</strong> {{ info.about }}</p>
+<p><strong>Телефон:</strong> {{ info.phone }}</p>
+<p><strong>Email:</strong> {{ info.email }}</p>
+<p><strong>Адрес:</strong> {{ info.address }}</p>
+<p><strong>Рабочие часы:</strong> {{ info.working_hours }}</p>
+
+<p><a href="{{ info.instagram }}">Instagram</a></p>
+<p><a href="{{ info.whatsapp }}">WhatsApp</a></p>
+
+<a href="{% url 'sierra-page' %}">Далее</a>
+
+</body>
+</html>
+
+
